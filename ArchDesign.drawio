@@ -1,0 +1,101 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="VoiceSummary" id="GLr6l71MWQrwsTSBuo5F">
+    <mxGraphModel dx="2074" dy="1197" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-1" value="&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;VoiceMemo AI&lt;/font&gt;&lt;/b&gt;" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="471" y="251" width="739" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-7" value="Azure Functions" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1054" y="291" width="144" height="535" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-4" value="Blob Trigger" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="t6_Wy0-Ern3s2zdmkV1L-2" target="sBMXPEcQUXhsYtmdmQXm-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-2" value="Azure Blob Storage&lt;div&gt;Recordings&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Blob_Block.svg;" parent="1" vertex="1">
+          <mxGeometry x="874" y="332.8" width="64" height="51.2" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="t6_Wy0-Ern3s2zdmkV1L-6" target="t6_Wy0-Ern3s2zdmkV1L-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-6" value="Azure App Service&lt;div&gt;Voice Upload &amp;amp; Report Download&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/App_Services.svg;" parent="1" vertex="1">
+          <mxGeometry x="694" y="535" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;startArrow=classic;startFill=1;" parent="1" source="sBMXPEcQUXhsYtmdmQXm-1" target="t6_Wy0-Ern3s2zdmkV1L-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-8" value="End User&lt;div&gt;Upload Recordings&lt;/div&gt;&lt;div&gt;View Transcript&amp;nbsp;&lt;/div&gt;&lt;div&gt;View Report&lt;/div&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;" parent="1" vertex="1">
+          <mxGeometry x="349" y="341" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="679" y="525" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;3&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="850" y="314.8" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-11" value="CosmosDB&lt;div&gt;DocumentDB&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" parent="1" vertex="1">
+          <mxGeometry x="555" y="714" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-12" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;8&lt;/b&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="528" y="714" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-13" value="&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Azure OpenAI&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;GPT-4o&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;Summarization&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1096.01" y="717" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-14" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.vaisulweb.com/wp-content/uploads/2019/02/azure_logo_794_new.png;" parent="1" vertex="1">
+          <mxGeometry x="474" y="252" width="54" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-15" value="&lt;b&gt;Azure Speech&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;To Text&lt;/b&gt;&lt;/div&gt;" style="editableCssRules=.*;html=1;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTggMjAiPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04IDBoMnYyMEg4ek00IDZoMnY4SDR6bTggMGgydjhoLTJ6TTAgM2gydjE0SDB6bTE2IDBoMnYxNGgtMnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNOCAwaDJ2MTBIOHpNNCA2aDJ2NEg0em04IDBoMnY0aC0yek0wIDNoMnY3SDB6bTE2IDBoMnY3aC0yeiIvPiYjeGE7PC9zdmc+;" parent="1" vertex="1">
+          <mxGeometry x="1099.81" y="473" width="44.79" height="49.77" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-16" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.basicthinking.de/blog/wp-content/uploads/2023/01/azure-openai-service.jpg;" parent="1" vertex="1">
+          <mxGeometry x="1060.6" y="637" width="130.8" height="73.57" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-17" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1067.01" y="637" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-18" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;5&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1067.01" y="462" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_Wy0-Ern3s2zdmkV1L-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;startArrow=classic;startFill=1;" parent="1" source="t6_Wy0-Ern3s2zdmkV1L-6" target="t6_Wy0-Ern3s2zdmkV1L-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;startArrow=classic;startFill=1;" parent="1" source="t6_Wy0-Ern3s2zdmkV1L-8" target="sBMXPEcQUXhsYtmdmQXm-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="423" y="359" as="sourcePoint" />
+            <mxPoint x="726" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-1" value="Azure Static&amp;nbsp;&lt;div&gt;Web&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="540" y="339" width="68" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-3" value="Azure Functions" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="1092" y="328.4" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sBMXPEcQUXhsYtmdmQXm-6" target="t6_Wy0-Ern3s2zdmkV1L-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-6" value="Azure Blob Storage&lt;div&gt;Results&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Blob_Block.svg;" parent="1" vertex="1">
+          <mxGeometry x="854" y="726.8" width="64" height="51.2" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="522" y="324" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;4&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1070.81" y="314.8" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sBMXPEcQUXhsYtmdmQXm-12" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="836" y="717" width="29" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckap9_C8S7KiFsn9LIH0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.964;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sBMXPEcQUXhsYtmdmQXm-7" target="sBMXPEcQUXhsYtmdmQXm-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="986" y="757" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

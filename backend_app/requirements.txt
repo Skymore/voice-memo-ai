@@ -1,0 +1,28 @@
+fastapi
+sqlalchemy
+psycopg2-binary
+python-multipart
+pydantic-settings
+pydantic[email]
+# For JWT auth
+passlib[bcrypt]
+pyjwt
+# Testing and development
+pytest
+bcrypt==4.2.1
+# Azure
+# Update these lines in your requirements.txt
+aiohttp
+azure-identity==1.15.0
+azure-core==1.32.0
+azure-cosmos==4.8.0
+
+azure-common==1.1.28
+azure-storage-blob
+# email-validator>=2.0.0
+httpx
+#azure-cosmos==4.8.0
+uvicorn==0.32.0
+requests==2.32.3
+python-dotenv==1.0.1
+python-jose[cryptography]==3.3.0
