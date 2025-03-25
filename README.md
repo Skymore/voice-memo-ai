@@ -4,6 +4,8 @@
 
 > ⚠️ This project is under active development and may be subject to changes.
 
+🚀 **Live Demo**: [https://voice-memo-ai-phi.vercel.app/](https://voice-memo-ai-phi.vercel.app/)
+
 ## 📚 Table of Contents
 
 1. [Overview](#overview)
@@ -252,12 +254,6 @@ flowchart TD
 4. Create Azure Function with Blob Trigger.
 5. Integrate Speech-to-Text & GPT-4o APIs.
 6. Use CosmosDB to manage metadata and prompts.
-
----
-
-## 🧪 Demo
-
-> Demo coming soon...
 
 ---
 

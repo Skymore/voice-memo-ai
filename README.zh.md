@@ -4,6 +4,8 @@
 
 > ⚠️ 本项目仍在积极开发中，未来可能会有调整或更新。
 
+🚀 **在线演示**: [https://voice-memo-ai-phi.vercel.app/](https://voice-memo-ai-phi.vercel.app/)
+
 ## 📚 目录
 
 1. [项目概述](#项目概述)  
@@ -252,12 +254,46 @@ flowchart TD
 
 ## 🚀 部署步骤
 
-1. 创建并部署 Azure Static Web App（前端页面）。
-2. 部署 FastAPI 应用至 Azure App Service。
-3. 配置 Blob 存储（`recordings/` 与 `results/` 两个容器）。
-4. 部署 Azure Function（Blob 触发器）。
-5. 在 Function 中集成 Speech-to-Text 与 GPT-4o API。
-6. 在 CosmosDB 中配置提示词集合及日志记录机制。
+### Vercel 部署（前端）
+
+1. 准备工作
+   - 注册 [GitHub](https://github.com) 账号
+   - 注册 [Vercel](https://vercel.com) 账号（可使用 GitHub 账号登录）
+
+2. 从 GitHub 仓库部署
+   ```bash
+   cd /path/to/your/project
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/your-username/your-repo-name.git
+   git push -u origin main
+   ```
+
+3. 通过 Vercel 控制台部署
+   - 访问 https://vercel.com 并登录
+   - 点击 "Add New Project"
+   - 导入你的 GitHub 仓库
+   - 配置项目设置：
+     - Root Directory: `frontend_app`
+     - Framework Preset: Next.js
+     - Build Command: `npm run build`
+     - Install Command: `npm install --legacy-peer-deps`
+     - Output Directory: `.next`
+   - 点击 "Deploy"
+
+4. 环境变量配置
+   - 在 Vercel 控制台中点击你的项目
+   - 进入 "Settings" > "Environment Variables"
+   - 添加必要的环境变量（如 API keys 等）
+
+5. 部署完成后：
+   - Vercel 会提供一个部署 URL（例如：https://your-project.vercel.app）
+   - 你可以在 Vercel 控制台中：
+     - 查看部署历史
+     - 设置自定义域名
+     - 配置环境变量
+     - 监控性能
 
 ---
 
