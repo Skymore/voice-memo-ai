@@ -7,6 +7,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
+// 开发模式标志，从环境变量获取
+const DEV_MODE = process.env.NEXT_PUBLIC_DEV_MODE === 'true';
+
 const menuItems = [
   { icon: Mic, label: 'Audio Upload', href: '/audio-upload' },
   { icon: FileAudio, label: 'Audio Recordings', href: '/audio-recordings' },
@@ -20,7 +23,22 @@ export function AppSidebar({ children }: { children: React.ReactNode }) {
   const router = useRouter()
   const pathname = usePathname()
 
+  // 如果是首页，不显示侧边栏
+  if (pathname === '/') {
+    return null
+  }
+
   useEffect(() => {
+    // 开发模式标志，从环境变量获取
+    const DEV_MODE = process.env.NEXT_PUBLIC_DEV_MODE === 'true';
+    
+    // 如果在开发模式下，则无需检查登录状态
+    if (DEV_MODE) {
+      setIsLoading(false)
+      setIsAuthenticated(true)
+      return
+    }
+
     const token = localStorage.getItem('token')
     setIsAuthenticated(!!token)
     setIsLoading(false)
@@ -36,7 +54,7 @@ export function AppSidebar({ children }: { children: React.ReactNode }) {
     router.push('/login')
   }
 
-  if (isLoading || !isAuthenticated || pathname === "/login") {
+  if (isLoading || (!isAuthenticated && process.env.NEXT_PUBLIC_DEV_MODE !== 'true') || pathname === "/login") {
     return null
   }
 
