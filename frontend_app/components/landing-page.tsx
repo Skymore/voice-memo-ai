@@ -13,18 +13,18 @@ export function LandingPage() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // 预加载字体和图标
+        // Preload fonts and icons
         if (typeof window !== "undefined") {
             Promise.all([
                 document.fonts.ready
             ])
             .then(() => {
-                // 所有资源加载完成
+                // All resources loaded
                 setIsLoading(false);
             })
             .catch((error) => {
                 console.error("Resource loading error:", error);
-                setIsLoading(false); // 即使出错也要显示内容
+                setIsLoading(false); // Show content even if there's an error
             });
         }
     }, []);
