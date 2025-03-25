@@ -297,12 +297,6 @@ flowchart TD
 
 ---
 
-## 🧪 演示 Demo
-
-> Demo 链接即将发布，敬请期待……
-
----
-
 ## 🛠️ 使用技术栈
 
 - **前端**：React + Azure Static Web Apps  
